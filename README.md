@@ -5,11 +5,11 @@ This doc is about how to build a structure to let the data consistent even when 
 # Setup
 Install <a href="https://github.com/bumptech/glide">Glide</a> locally in you machine.
 
-clone scripts repo and run 'cloneAll.sh'
+clone scripts repo and run **cloneAll.sh**
 
-After that, run **'glideAll.sh'**, it will bundle all the required packages in all repos.
+After that, run **glideAll.sh**, it will bundle all the required packages in all repos.
 
-Start all services by running script **'startAll.sh'**
+Start all services by running script **startAll.sh**
 
 Open **localhost:5000** in browser
 
