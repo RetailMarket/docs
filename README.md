@@ -3,6 +3,8 @@
 This doc is about how to build a structure to let the data consistent even when it depends on more than one service. (Simply microservice structure)
 
 # Setup
+Install <a href="https://github.com/bumptech/glide">Glide</a> locally in you machine.
+
 clone scripts repo and run 'cloneAll.sh'
 
 After that, run **'glideAll.sh'**, it will bundle all the required packages in all repos.
