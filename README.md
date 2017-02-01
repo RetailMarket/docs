@@ -17,4 +17,4 @@ Go ahead and update the price of any product.
 
 If any of the service is down, then price will not be updated, once service comes up the price will be automatically be updated.
 
-# See the image url: <img src="https://github.com/RetailMarket/docs/flow.png"></img>
+# See the image url: <img src="https://github.com/RetailMarket/docs/blob/master/flow.png"></img>
