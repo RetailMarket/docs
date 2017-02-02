@@ -1,4 +1,4 @@
-# docs
+# Docs
 
 This doc is about how to build a structure to let the data consistent even when it depends on more than one service. (Simply microservice structure)
 
