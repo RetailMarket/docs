@@ -23,13 +23,13 @@ The web service should be available at `http://localhost:5000`
 
 ## Steps to check flow
 
-Hit the above url.
+Open the above url.
 
 You can see some products with there price.
 
 Go ahead and update the price of any product.
 
-Refresh the page after 5 sec.
+Refresh the page after 5 sec(jobs are scheduled after every 5 sec).
 
 You will see that the price was updated.
 
