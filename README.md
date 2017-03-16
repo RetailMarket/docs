@@ -6,22 +6,31 @@ Install <a href="https://github.com/bumptech/glide">Glide</a> locally in you mac
 
 Clone <a href="https://github.com/RetailMarket/infra">Infra</a> repo.
 
-#Run
+# Getting Started
 
-##open
-cd scripts/
+```
+open cd scripts/
+```
 
-##clone all repos
-sh **./cloneAll.sh**
+## clone all repos
+```
+sh ./cloneAll.sh
+```
 
-##Bundle all the required packages in all repos.
-sh **./glideAll.sh**
+## Bundle all the required packages in all repos.
+```
+sh ./glideAll.sh
+```
 
-##Start all services by running script
-sh **./startAll.sh**
+## Start all services by running script
+```
+sh ./startAll.sh
+```
 
-##Open UI
-**localhost:5000** (default)
+## Open UI
+```
+localhost:5000 (default)
+```
 
 You can see all the products with latest price.
 
