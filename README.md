@@ -2,40 +2,49 @@
 
 This doc is about how to build a structure to let the data consistent even when it depends on more than one service. (Simply microservice structure)
 
-Install <a href="https://github.com/bumptech/glide">Glide</a> locally in you machine.
+### Machine Setup
 
-Clone <a href="https://github.com/RetailMarket/infra">Infra</a> repo.
+* Install `golang` 1.7 
+* Install [glide](https://github.com/Masterminds/glide).
 
-# Getting Started
+## Project setup
 
-```
-open cd scripts/
-```
+1. clone <a href="https://github.com/RetailMarket/infra">Infra</a> repo.
+2. open scripts `cd scripts/`
+3. close all repos `./cloneAll.sh`
+4. glide install `./glideAll.sh`
 
-## clone all repos
+## Bring up services
 ```
-sh ./cloneAll.sh
-```
-
-## Bundle all the required packages in all repos.
-```
-sh ./glideAll.sh
+Do `sh ./rundev.sh` in PriceManager, Workflow, priceSync, workflowsync, priceWeb.
 ```
 
-## Start all services by running script
-```
-sh ./startAll.sh
-```
+The web service should be available at `http://localhost:5000`
 
-## Open UI
-```
-localhost:5000 (default)
-```
+## Steps to check flow
 
-You can see all the products with latest price.
+Hit the above url.
+
+You can see some products with there price.
 
 Go ahead and update the price of any product.
 
-If any of the service is down, then price will not be updated, once service comes up the price will automatically be updated.
+Refresh the page after 5 sec.
+
+You will see that the price was updated.
+
+Now stop any service except **priceWeb**.
+
+Then update the price of any product again and refresh the page after 5 sec.
+
+You will see that the price didn't change.
+
+Now start the service again which you have stopped.
+
+Come back to UI, wait for 5 sec and refresh the page again.
+
+Now you will see that the price has been updated.
+
+If any of the service is down, then updation will not take place, once service comes up the updation will happen automatically.
 
 ![Flow](https://github.com/RetailMarket/docs/blob/master/flow.png)
