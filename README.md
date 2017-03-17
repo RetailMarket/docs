@@ -2,7 +2,7 @@
 
 This doc is about how to build a structure to let the data consistent even when it depends on more than one service. (Simply microservice structure)
 
-### Machine Setup
+### Machine setup
 
 * Install `golang` 1.7 
 * Install [glide](https://github.com/Masterminds/glide).
@@ -13,6 +13,16 @@ This doc is about how to build a structure to let the data consistent even when 
 2. open scripts `cd scripts/`
 3. close all repos `./cloneAll.sh`
 4. glide install `./glideAll.sh`
+
+## Database configs
+```
+Add db configs in database/config.sh of priceManger and workflow service.
+```
+## Run migrations
+```
+Add migration config in db/dbconf.yml
+Run command `./goose.sh schema_name up/down` in priceManger and workflow service.
+```
 
 ## Bring up services
 ```
