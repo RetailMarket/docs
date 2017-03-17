@@ -16,7 +16,7 @@ This doc is about how to build a structure to let the data consistent even when 
 
 ## Bring up services
 ```
-Do `sh ./rundev.sh` in PriceManager, Workflow, priceSync, workflowsync, priceWeb.
+Do `./start_server.sh` in PriceManager, Workflow, priceSync, workflowsync, priceWeb.
 ```
 
 The web service should be available at `http://localhost:5000`
